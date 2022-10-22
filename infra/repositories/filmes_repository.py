@@ -26,4 +26,5 @@ class FilmesRepository:
             filme = db.session.query(Filmes).filter(Filmes.titulo == titulo)
             filme.update({"ano": ano})
             db.session.commit()
+            db.session.refresh(filme)
             return filme
