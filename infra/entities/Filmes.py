@@ -1,5 +1,5 @@
 from infra.configs.base import Base
-
+from infra.entities.Atores import Atores
 from sqlalchemy import Column, String, Integer
 from sqlalchemy.orm import relationship
 
